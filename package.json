@@ -1,0 +1,25 @@
+{
+  "name": "stopwatch.typescript",
+  "version": "1.0.0",
+  "description": "Stopwatch TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yobuligo/stopwatch.typescript.git"
+  },
+  "keywords": [
+    "Stopwatch"
+  ],
+  "author": "Yobuligo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yobuligo/stopwatch.typescript/issues"
+  },
+  "homepage": "https://github.com/Yobuligo/stopwatch.typescript#readme",
+  "dependencies": {
+    "@yobuligo/core.typescript": "^1.0.9"
+  }
+}
