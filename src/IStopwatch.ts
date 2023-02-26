@@ -34,18 +34,28 @@ export interface IStopwatch {
   reset(): void;
 
   /**
-   * Starts the stopwatch and adds an intermediate time. The corresponding intermediate time text can be specified by passing in parameter *{@link text}*.
+   * Starts the stopwatch, returns the timestamp and adds an intermediate time. The corresponding intermediate time text can be specified by passing in parameter *{@link text}*. 
    *
    * The method call has no effect if the stopwatch was already started, not even after it was stopped. To restart it call method *{@link reset}()* first.
    */
-  start(text?: string): void;
+  start(text?: string): Date;
 
   /**
-   * Stops the stopwatch and adds an intermediate time. The corresponding intermediate time text can be specified by passing in parameter *{@link text}*.
+   * Returns the timestamp of the start time or null if not started.
+   */
+  readonly startedAt?: Date;
+
+  /**
+   * Stops the stopwatch, returns the timestamp if stopped and adds an intermediate time. The corresponding intermediate time text can be specified by passing in parameter *{@link text}*.
    *
    * The method call has no effect, if the stopwatch is not running.
    */
-  stop(text?: string): void;
+  stop(text?: string): Date | undefined;
+
+  /**
+   * Returns the timestamp of the stop time of null if not started.
+   */
+  readonly stoppedAt?: Date;
 
   /**
    * Takes a current timestamp, combined with a *{@link text}* and adds it to a list of intermediate times. These timestamps can be retrieved via property *{@link intermediateTimes}*.
