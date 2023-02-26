@@ -62,6 +62,8 @@ class StopwatchDefault implements IStopwatch {
   }
 }
 
-export const stopwatch = (): IStopwatch => {
+export const createStopwatch = (): IStopwatch => {
   return new StopwatchDefault();
 };
+
+export const Stopwatch = createStopwatch();
