@@ -1,5 +1,5 @@
 {
-  "name": "stopwatch.typescript",
+  "name": "@yobuligo/stopwatch.typescript",
   "version": "1.0.0",
   "description": "Stopwatch TypeScript",
   "main": "index.js",
