@@ -1,0 +1,2 @@
+# stopwatch.typescript
+Stopwatch TypeScript
