@@ -1,8 +1,9 @@
 {
   "name": "@yobuligo/stopwatch.typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stopwatch TypeScript",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.ts"
   },
@@ -19,6 +20,9 @@
     "url": "https://github.com/Yobuligo/stopwatch.typescript/issues"
   },
   "homepage": "https://github.com/Yobuligo/stopwatch.typescript#readme",
+  "files": [
+    "/dist"
+  ],
   "dependencies": {
     "@yobuligo/core.typescript": "^1.0.9"
   },
